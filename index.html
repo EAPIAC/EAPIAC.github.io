@@ -52,6 +52,23 @@
 			margin: 0 auto;
 			width: 800px;
 		}
+		const myTheme = {
+  render(state, instance) {
+    const container = document.createElement('div')
+    container.lang = "en-US"
+    container.className = 'gitment-container gitment-root-container'
+    container.appendChild(instance.renderHeader(state, instance))
+    container.appendChild(instance.renderEditor(state, instance))
+    container.appendChild(instance.renderComments(state, instance))
+    container.appendChild(instance.renderFooter(state, instance))
+    return container
+  },
+}
+const gitment = new Gitment({
+  // ...
+  theme: myTheme,
+})
+gitment.render('container')
 	</style>
 </head>
     
@@ -109,18 +126,19 @@
                <div id="gitmentContainer"></div>
             <link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
 <script src="https://www.wenjunjiang.win/js/gitment.js"></script>
-
-            <script>
-            var gitment = new Gitment({
-                owner: 'EAPIAC',
-                repo: 'EAPIAC.github.io',
-                oauth: {
-                    client_id: '373699ea1d7ef301488b',
-                    client_secret: '6f94b2bdc349fee798640e0cc9d3607f88a48630',
-                },
-            });
-            gitment.render('gitmentContainer');
-            </script>
+<script>
+var gitment = new Gitment({
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'EAPIAC',
+  repo: 'EAPIAC.github.io',
+  oauth: {
+    client_id: '373699ea1d7ef301488b',
+    client_secret: '6f94b2bdc349fee798640e0cc9d3607f88a48630',
+  },
+})
+gitment.render('container')
+</script>
+            
 
 
             <div id = "introdution">
