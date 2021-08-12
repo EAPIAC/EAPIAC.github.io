@@ -2,5 +2,5 @@
 gitment_owner: EAPIAC       #你的 GitHub ID
 gitment_repo: 'EAPIAC.github.io'          #存储评论的 repo
 gitment_oauth:
-  client_id: '12af372b787ecae2b484'           #client ID
-  client_secret: '393959b4499aff70a163670ea8fbf349cd0f40fc'       #client secret
+  client_id: '97e34fedcb28e8a41643'           #client ID
+  client_secret: '52fb2aba30a6f9bd54194a448e3d80e42d7a943e'       #client secret
