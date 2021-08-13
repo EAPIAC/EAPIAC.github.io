@@ -108,7 +108,21 @@
             </header>
 			<div class="section">EAPIAC is an technology innovation alliance with information science, software and hardware implementation and application including: Cryptography, Privacy-preserving Computation, Artificial Intelligence and Application, Blockchain and Application, CloudNative Computation and Application, IoT and Application, etc..</div>
 			<p style="text-align:center"><img src="image/EAPIAC logo.png" style="width:50%; height:50%; margin: 10px;" ></p>
-						
+			<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'location.href', // 可选。默认为 location.href  比如我本人的就删除了
+  owner: 'EAPIAC',              //比如我的叫anTtutu
+  repo: 'EAPIAC.github.io',                 //比如我的叫anTtutu.github.io
+  oauth: {
+    client_id: 'b1a8b57ecc0bfbd3c684',          //比如我的828***********
+    client_secret: '399da802f38c3043577795afbea49b6a62c083ed',  //比如我的49e************************
+  },
+})
+gitment.render('container')
+</script>			
             <div id = "introdution">
                         <div class="introdution">
                             <div id="theme">				    
