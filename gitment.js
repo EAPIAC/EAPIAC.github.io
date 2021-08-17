@@ -3693,7 +3693,7 @@ var Gitment = function () {
         return comment.id === commentId;
       });
 
-      return _utils.http.post('https://github.com/login/oauth/access_token', {}) {
+      return _utils.http.post('/repos/' +  owner + '/' + repo + '/issues/comments/' + commentId + '/reactions', {}) {
         content: 'heart'
       }).then(function (reaction) {
         _this14.state.commentReactions[commentId].push(reaction);
