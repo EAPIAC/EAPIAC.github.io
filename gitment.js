@@ -3650,7 +3650,7 @@ var Gitment = function () {
           repo = this.repo;
 
 
-      return _utils.http.post('/repos/' + owner + '/' + repo + '/issues/' + this.state.meta.number + '/reactions', {
+      return _utils.http.post(''/repos/' + owner + '/' + repo + '/issues/comments/' + comment.id + '/reactions', {
         content: 'heart'
       }).then(function (reaction) {
         _this12.state.reactions.push(reaction);
