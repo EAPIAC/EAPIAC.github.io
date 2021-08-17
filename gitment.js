@@ -3693,7 +3693,7 @@ var Gitment = function () {
         return comment.id === commentId;
       });
 
-      return _utils.http.post(/repos/EAPIAC /EAPIAC.github.io /issues/comments/ b1a8b57ecc0bfbd3c684 /reactions, {
+      return _utils.http.post(/repos/   EAPIAC  /  EAPIAC.github.io  /issues/comments/  EAPIAC@outlook.com  /reactions, {
         content: 'heart'
       }).then(function (reaction) {
         _this14.state.commentReactions[commentId].push(reaction);
